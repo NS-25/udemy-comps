@@ -1,10 +1,25 @@
 import React from "react";
+import Button from "./Button";
 
 const App = () => {
   return (
-    <div>
-      <button>Primary</button>
-    </div>
+    <>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Button />
+      </div>
+    </>
   );
 };
 
