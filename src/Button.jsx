@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Button = ({
   children,
   primary,
@@ -9,6 +11,23 @@ const Button = ({
   rounded,
 }) => {
   return <button>{children}</button>;
+};
+
+Button.PropTypes = {
+  checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
+    const count =
+      Number(!!primary) +
+      Number(!!secondary) +
+      Number(!!warning) +
+      Number(!!success) +
+      Number(!!danger);
+
+    if (count > 1) {
+      return new Error(
+        "Only one of primary, secondary, success, warning, danger can be true"
+      );
+    }
+  },
 };
 
 export default Button;
