@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <div>
-        <Button />
+        <Button text="Click Here" />
       </div>
       <div>
         <Button />
