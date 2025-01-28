@@ -5,19 +5,19 @@ const App = () => {
   return (
     <>
       <div>
-        <Button text="Click Here" />
+        <Button></Button>
       </div>
       <div>
-        <Button />
+        <Button></Button>
       </div>
       <div>
-        <Button />
+        <Button></Button>
       </div>
       <div>
-        <Button />
+        <Button></Button>
       </div>
       <div>
-        <Button />
+        <Button></Button>
       </div>
     </>
   );
