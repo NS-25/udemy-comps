@@ -13,7 +13,7 @@ const Button = ({
   return <button>{children}</button>;
 };
 
-Button.PropTypes = {
+Button.propTypes = {
   checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
     const count =
       Number(!!primary) +
