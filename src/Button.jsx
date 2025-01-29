@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../src/"
 
 const Button = ({
   children,
@@ -10,7 +11,7 @@ const Button = ({
   outline,
   rounded,
 }) => {
-  return <button>{children}</button>;
+  return <button className="bg-red-500">{children}</button>;
 };
 
 Button.propTypes = {
