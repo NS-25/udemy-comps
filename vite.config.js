@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [
-    tailwindcss(),
+    // tailwindcss(),
     {
       name: "treat-js-files-as-jsx",
       async transform(code, id) {
