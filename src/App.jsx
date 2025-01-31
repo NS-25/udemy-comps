@@ -5,6 +5,7 @@ const App = () => {
   return (
     <>
       <div>
+        {/* // what language should we use ? */}
         <Button success primary>
           Click me!!
         </Button>

@@ -1,4 +1,6 @@
-import PropTypes from "prop-types";
+import classnames from "classnames";
+
+const finalClassName = classnames("px-3", "py-1.5", "bg-blue-500");
 
 const Button = ({
   children,
@@ -11,7 +13,10 @@ const Button = ({
   rounded,
 }) => {
   return (
-    <button className="px-3 py-1.5 border border-blue-600 bg-blue-500 text-white">
+    <button
+      className="px-3 py-1.5 border border-blue-600 bg-blue-500 text-white"
+      onClick={handleLanguages}
+    >
       {children}
     </button>
   );
