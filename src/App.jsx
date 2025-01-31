@@ -20,7 +20,7 @@ const App = () => {
         <Button>Hide Ads!</Button>
       </div>
       <div>
-        <Button primary rounded={}>Something!</Button>
+        <Button primary rounded>Something!</Button>
       </div>
     </>
   );
