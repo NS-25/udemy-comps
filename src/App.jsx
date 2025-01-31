@@ -18,9 +18,7 @@ const App = () => {
         <Button>Hide Ads!</Button>
       </div>
       <div>
-        <Button secondary rounded>
-          Something!
-        </Button>
+        <Button rounded>Something!</Button>
       </div>
     </>
   );
