@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { GoBellFill } from "react-icons/go";
+import { GoBellFill, GoCloud, GoDatabase } from "react-icons/go";
 
 const App = () => {
   return (
@@ -23,10 +23,14 @@ const App = () => {
         </Button>
       </div>
       <div>
-        <Button warning>Hide Ads!</Button>
+        <Button warning>
+          <GoDatabase />
+          Hide Ads!
+        </Button>
       </div>
       <div>
         <Button danger outline>
+          <GoCloud />
           Something!
         </Button>
       </div>
