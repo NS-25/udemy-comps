@@ -11,7 +11,9 @@ const App = () => {
         </Button>
       </div>
       <div>
-        <Button secondary>Buy Now!</Button>
+        <Button secondary outline rounded>
+          Buy Now!
+        </Button>
       </div>
       <div>
         <Button success>See Deal!</Button>
@@ -20,7 +22,7 @@ const App = () => {
         <Button warning>Hide Ads!</Button>
       </div>
       <div>
-        <Button danger rounded>
+        <Button danger rounded outline>
           Something!
         </Button>
       </div>
