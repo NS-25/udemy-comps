@@ -6,7 +6,9 @@ const App = () => {
     <>
       <div>
         {/* // what language should we use ? */}
-        <Button primary>Click me!!</Button>
+        <Button primary rounded>
+          Click me!!
+        </Button>
       </div>
       <div>
         <Button secondary>Buy Now!</Button>
@@ -18,7 +20,9 @@ const App = () => {
         <Button warning>Hide Ads!</Button>
       </div>
       <div>
-        <Button danger>Something!</Button>
+        <Button danger rounded>
+          Something!
+        </Button>
       </div>
     </>
   );
