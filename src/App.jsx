@@ -1,6 +1,6 @@
 import React from "react";
+import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 import Button from "./Button";
-import { GoBellFill, GoCloud, GoDatabase } from "react-icons/go";
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <div>
         {/* // what language should we use ? */}
         <Button secondary outline rounded>
-          <GoBellFill />
+          <GoBell className="mr-1" />
           Click me!!
         </Button>
       </div>
@@ -30,7 +30,7 @@ const App = () => {
       </div>
       <div>
         <Button danger outline>
-          <GoCloud />
+          <GoCloudDownload />
           Something!
         </Button>
       </div>
