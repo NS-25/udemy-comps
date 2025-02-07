@@ -3,13 +3,11 @@ import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 import Button from "./Button";
 
 const App = () => {
-  
-  
   return (
     <>
       <div>
         {/* // what language should we use ? */}
-        <Button secondary outline rounded>
+        <Button secondary outline rounded className="mb-5">
           <GoBell className="mr-1" />
           Click me!!
         </Button>
