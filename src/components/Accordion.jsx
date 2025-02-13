@@ -8,7 +8,7 @@ function Accordion({ items }) {
     return (
       <div key={item.id}>
         <div>{item.label}</div>
-        {isExpanded && <div>{item.conten}</div>}
+        {isExpanded && <div>{item.content}</div>}
       </div>
     );
   });
