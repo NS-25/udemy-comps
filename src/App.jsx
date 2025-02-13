@@ -19,6 +19,10 @@ const App = () => {
       contect: "You can use CSS on any project.",
     },
   ];
+  const handleItems = (item) => {
+    console.log(item)
+  }
+  
   return (
     <>
       <Accordion items={items} />
