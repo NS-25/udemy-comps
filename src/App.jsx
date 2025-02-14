@@ -6,7 +6,7 @@ const App = () => {
     {
       id: "l1react",
       label: "Can I use React on a project?",
-      content: "You can use React on any project you wnat.",
+      content: "You can use React on any project you want.",
     },
     {
       id: "l2javascript",
