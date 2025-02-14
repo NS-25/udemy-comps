@@ -16,13 +16,13 @@ const App = () => {
     {
       id: "l3CSS",
       label: "Can I use CSS on a project?",
-      contect: "You can use CSS on any project.",
+      content: "You can use CSS on any project.",
     },
   ];
   const handleItems = (item) => {
-    console.log(item)
-  }
-  
+    console.log(item);
+  };
+
   return (
     <>
       <Accordion items={items} />

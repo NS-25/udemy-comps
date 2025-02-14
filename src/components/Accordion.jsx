@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 
 function Accordion({ items }) {
+  // create state here!
   const [expandedIndex, setExpandedIndex] = useState(0);
+  // create event handler !
+  const handleClick = (nextIndex) => {
+    setExpandedIndex(nextIndex);
+  };
 
   const renderItems = items.map((item, index) => {
-    // create state here!
     const isExpanded = index === expandedIndex;
-    // create event handler !
-    const handleClick = () => {
-      setExpandedIndex(index);
-    };
+
     return (
       <div key={item.id}>
-        <div onClick={handleClick}>{item.label}</div>
+        <div
+          onClick={() => {
+            handleClick(index);
+          }}
+        >
+          {item.label}
+        </div>
         {isExpanded && <div>{item.content}</div>}
       </div>
     );
