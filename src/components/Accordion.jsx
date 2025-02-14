@@ -3,7 +3,7 @@ import { GoChevronDown, GoChevronLeft } from "react-icons/go";
 
 function Accordion({ items }) {
   // create state here!
-  const [expandedIndex, setExpandedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(-1);
   // create event handler !
   const handleClick = (nextIndex) => {
     setExpandedIndex(nextIndex);
