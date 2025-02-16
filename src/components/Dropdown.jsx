@@ -1,4 +1,5 @@
-const Dropdown = () => {
+const Dropdown = ({options}) => {
+  
   return <div>Dropdown...</div>;
 };
 
