@@ -18,8 +18,8 @@ const Dropdown = ({ options }) => {
 
   return (
     <div>
-      <div>Select...</div>
-      <div onClick={handleClick}>{renderedOptions}</div>
+      <div onClick={handleClick}>Select...</div>
+      {isOpen && <div>{renderedOptions}</div>}
     </div>
   );
 };
