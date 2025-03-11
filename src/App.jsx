@@ -4,7 +4,11 @@ import Dropdown from "./components/Dropdown";
 
 const App = () => {
   const [Selection, setSelection] = useState(null);
-  
+
+  const handleSelect = (option) => {
+    setSelection(option);
+  };
+
   const options = [
     {
       label: "Red",
