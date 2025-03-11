@@ -3,7 +3,7 @@ import { useState } from "react";
 import Dropdown from "./components/Dropdown";
 
 const App = () => {
-  const [Selection, setSelection] = useState(null);
+  const [selection, setSelection] = useState(null);
 
   const handleSelect = (option) => {
     setSelection(option);
@@ -26,7 +26,11 @@ const App = () => {
 
   return (
     <>
-      <Dropdown options={options} />
+      <Dropdown
+        options={options}
+        selection={selection}
+        onSelect={handleSelect}
+      />
     </>
   );
 };
