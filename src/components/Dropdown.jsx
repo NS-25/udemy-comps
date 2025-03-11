@@ -13,11 +13,16 @@ const Dropdown = ({ options }) => {
   // };
 
   const handleOptionClick = () => {
-    console.log('I should close');
-  }
+    // console.log('I should close');
+    setIsOpen(!isOpen);
+  };
 
   const renderedOptions = options.map((option) => {
-    return <div  onClick={handleOptionClick} key={option.value}>{option.label}</div>;
+    return (
+      <div onClick={handleOptionClick} key={option.value}>
+        {option.label}
+      </div>
+    );
   });
 
   return (
