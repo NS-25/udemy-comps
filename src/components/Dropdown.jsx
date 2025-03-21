@@ -40,7 +40,7 @@ const Dropdown = ({ options, value, onChange }) => {
         onClick={handleClick}
       >
         {value?.label || "Select..."}
-        <GoChevronDown />
+        <GoChevronDown className="text-lg " />
       </div>
       {isOpen && (
         <div className="absolute top-full border rounded p-3 shadow bg-white w-full">
