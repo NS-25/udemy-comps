@@ -9,7 +9,9 @@ const Dropdown = ({ options, value, onChange }) => {
   // section:218 Reminder of clean up...
   useEffect(() => {
     const handler = (event) => {
-      console.log(divElement);
+      if (!divElement.current.contains(event.target)) {
+        setIsOpen(false);
+      }
     };
     document.addEventListener("click", handler, true);
     return () => {
