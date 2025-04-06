@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Dropdown from "./components/Dropdown";
+import ModalPage from "./pages/ModalPage";
 
 const App = () => {
   const [selection, setSelection] = useState(null);
@@ -25,10 +26,15 @@ const App = () => {
   ];
 
   return (
-    <div className="flex">
-      <Dropdown options={options} value={selection} onChange={handleSelect} />
-      <Dropdown options={options} value={selection} onChange={handleSelect} />
-    </div>
+    <>
+      <div className="flex">
+        <Dropdown options={options} value={selection} onChange={handleSelect} />
+        <Dropdown options={options} value={selection} onChange={handleSelect} />
+      </div>
+      <div>
+        <ModalPage />
+      </div>
+    </>
   );
 };
 
