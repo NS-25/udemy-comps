@@ -1,9 +1,21 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const NavigationContext = createContext();
 
 const NavigationProvider = ({ children }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  // useEffect section
+  useEffect(() => {
+    const handler = () => {
+      setCurrentPath(window.location.pathname);
+    };
+    window.addEventListener("popstate", handler);
+    return () => {
+      window.removeEventListener("popstate", handler);
+    };
+  }, []);
+
   return (
     <NavigationContext.Provider value={{}}>
       {currentPath}
