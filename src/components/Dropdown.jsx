@@ -11,7 +11,7 @@ const Dropdown = ({ options, value, onChange }) => {
     const handler = (event) => {
       if (!divElement.current.contains(event.target)) {
         setIsOpen(false);
-      }
+      } 
     };
     document.addEventListener("click", handler, true);
     return () => {
