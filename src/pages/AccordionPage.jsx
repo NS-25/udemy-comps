@@ -25,7 +25,7 @@ const AccordionPage = () => {
 
   return (
     <>
-      <Accordion items={items} />
+      <Accordion items={items} onChange={handleItems} />
     </>
   );
 };
