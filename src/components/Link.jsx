@@ -1,9 +1,13 @@
 import useNavigation from "../hooks/use-navigation";
 import classNames from "classnames";
-const Link = ({ to, children }) => {
-  const { navigate } = useNavigation();
+const Link = ({ to, children, className }) => {
+  const { navigate, currrentPath } = useNavigation();
 
-  const classes = classNames("text-blue-500");
+  const classes = classNames(
+    "text-blue-500",
+    className,
+    currrentPath === to && activeClassName
+  );
 
   const handleClick = (event) => {
     if (event.metaKey || event.ctrlKey) {
