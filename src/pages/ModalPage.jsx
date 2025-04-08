@@ -18,7 +18,7 @@ const ModalPage = () => {
           Open Modal
         </Button>
         
-        {showModal && <Modal/>}
+        {showModal && <Modal/> }
       </div>
     </>
   );
