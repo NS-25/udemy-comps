@@ -14,7 +14,11 @@ const Sidebar = () => {
       </Link>
     );
   });
-  return <div>{renderLinks}</div>;
+  return (
+    <div className="sticky top-0 overflow-y-scroll flex flex-col">
+      {renderLinks}
+    </div>
+  );
 };
 
 export default Sidebar;
