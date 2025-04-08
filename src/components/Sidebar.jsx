@@ -4,13 +4,13 @@ const Sidebar = () => {
   const links = [
     { label: "Dropdown", path: "/" },
     { label: "Accordion", path: "/accordion" },
-    { label: "Buttons", path: "/buutons" },
+    { label: "Buttons", path: "/buttons" },
   ];
 
-  const renderLinks = links.map(() => {
+  const renderLinks = links.map((link) => {
     return (
-      <Link key={Link.label} to={links.path}>
-        {links.label}
+      <Link key={link.label} to={link.path}>
+        {link.label}
       </Link>
     );
   });
