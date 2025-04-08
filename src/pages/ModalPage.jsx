@@ -38,7 +38,6 @@ const ModalPage = () => {
         <Button onClick={handleClick} primary>
           Open Modal
         </Button>
-
         {showModal && modal}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc
