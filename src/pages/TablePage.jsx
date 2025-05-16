@@ -10,7 +10,7 @@ const TablePage = () => {
   ];
   return (
     <div>
-      <Table />
+      <Table data={data} />
     </div>
   );
 };
