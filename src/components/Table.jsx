@@ -1,8 +1,8 @@
 import React from "react";
 
 const Table = ({ data }) => {
-  const RenderRows = data.map((fruit) => {
-    <tr>
+  const renderRows = data.map((fruit) => {
+    <tr key={fruit.name}>
       <td>{fruit.name}</td>
       <td>{fruit.color}</td>
       <td>{fruit.score}</td>
@@ -16,7 +16,7 @@ const Table = ({ data }) => {
         <tr>Color</tr>
         <tr>Score</tr>
       </thead>
-      <tbody></tbody>
+      <tbody>{renderRows}</tbody>
     </table>
   );
 };
