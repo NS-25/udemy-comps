@@ -19,7 +19,7 @@ const Table = ({ data, config }) => {
   });
 
   return (
-    <table className="table-auto border-spacing-2">
+    <table className="table-auto bor  der-spacing-2">
       <thead>
         <tr className="border-b-2">{renderedHeader}</tr>
       </thead>
