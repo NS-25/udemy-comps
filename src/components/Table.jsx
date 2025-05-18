@@ -7,11 +7,16 @@ const Table = ({ data, config }) => {
 
   ////
   const renderRows = data.map((fruit) => {
+    const renderedCells = config.map((column) => {
+      return (
+        <td className="p-2" key={column.label}>
+          {column.render(fruit)}
+        </td>
+      );
+    });
     return (
-      <tr className="border" key={fruit.name}>
-        <td className="p-3">{config[0].render(fruit)}</td>
-        <td className="p-3">{config[1].render(fruit)}</td>
-        <td className="p-3">{config[2].render(fruit)}</td>
+      <tr className="border-b" key={fruit.name}>
+        {renderedCells}
       </tr>
     );
   });
