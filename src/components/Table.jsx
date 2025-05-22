@@ -6,16 +6,16 @@ const Table = ({ data, config }) => {
   });
 
   ////
-  const renderRows = data.map((fruit) => {
+  const renderRows = data.map((rowData) => {
     const renderedCells = config.map((column) => {
       return (
         <td className="p-2" key={column.label}>
-          {column.render(fruit)}
+          {column.render(rowData)}
         </td>
       );
     });
     return (
-      <tr className="border-b" key={fruit.name}>
+      <tr className="border-b" key={rowData.name}>
         {renderedCells}
       </tr>
     );
