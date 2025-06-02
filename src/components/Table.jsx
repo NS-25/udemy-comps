@@ -29,6 +29,6 @@ const Table = ({ data, config, keyFn }) => {
       <tbody>{renderRows}</tbody>
     </table>
   );
-};
+}; 
 
 export default Table;
